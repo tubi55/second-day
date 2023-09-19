@@ -1,6 +1,7 @@
 @import 'reset';
+@import 'variable';
 body {
-	background: hotpink;
+	background: var(--color1);
 
 	section {
 		width: 600px;
@@ -11,7 +12,7 @@ body {
 
 		h1 {
 			font: bold 50px/1 'arial';
-			color: hotpink;
+			color: var(--color1);
 			margin-bottom: 40px;
 		}
 		p {
@@ -20,7 +21,7 @@ body {
 		a {
 			display: inline-block;
 			padding: 8px 30px;
-			background: hotpink;
+			background: var(--color1);
 			font: bold 16px/1 'arial';
 			color: #fff;
 		}
@@ -31,15 +32,15 @@ body {
 //모바일 디바이스는 폭이 워낙 다양하기 때문에 폭을 무조건 퍼센트처리
 @media screen and (max-width: 999px) {
 	body {
-		background: aqua;
+		background: var(--color2);
 
 		section {
 			width: 80%;
 			h1 {
-				color: aqua;
+				color: var(--color2);
 			}
 			a {
-				background: aqua;
+				background: var(--color2);
 			}
 		}
 	}
@@ -47,14 +48,14 @@ body {
 
 @media screen and (max-width: 599px) {
 	body {
-		background: orange;
+		background: var(--color3);
 
 		section {
 			h1 {
-				color: orange;
+				color: var(--color3);
 			}
 			a {
-				background: orange;
+				background: var(--color3);
 			}
 		}
 	}
