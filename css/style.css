@@ -34,11 +34,36 @@ body section p {
 }
 body section a {
   display: inline-block;
-  border: 1px solid red;
   padding: 8px 30px;
   background: hotpink;
   font: bold 16px/1 "arial";
   color: #fff;
+}
+
+@media screen and (max-width: 999px) {
+  body {
+    background: aqua;
+  }
+  body section {
+    width: 80%;
+  }
+  body section h1 {
+    color: aqua;
+  }
+  body section a {
+    background: aqua;
+  }
+}
+@media screen and (max-width: 599px) {
+  body {
+    background: orange;
+  }
+  body section h1 {
+    color: orange;
+  }
+  body section a {
+    background: orange;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
